@@ -1,8 +1,8 @@
 class QuestionsController < ApplicationController
-  def index
-    @questions = Question.All 
-    render :index
-  end
+  # def index
+  #   @questions = Question.all 
+  #   render 
+  # end
 
   def new
     @current_user = current_user
@@ -26,7 +26,9 @@ class QuestionsController < ApplicationController
   end
 
   private
-    def question_params
-      params.require(:question).permit(:content, :votes, :user_id)
-    end
+
+  def question_params
+    params.require(:question).permit(:content, :votes, :user_id)
+  end
+
 end

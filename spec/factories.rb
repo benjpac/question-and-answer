@@ -1,14 +1,15 @@
 FactoryGirl.define do
-  factory :answer do
-    content "MyString"
-    votes 1
-    question_id 1
-  end
-  factory :question do
-    content "MyString"
-    votes 1
-  end
   factory(:user) do
-    email('bob@bob.com')
+    email("bob@bobbdsfsdfsd.com")
+    password("test")
+  end
+  factory(:answer) do
+    content("MyString")
+    votes(1)
+    question_id(1)
+  end
+  factory(:question) do
+    content("MyString")
+    votes(1)
   end
 end

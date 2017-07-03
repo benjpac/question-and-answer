@@ -4,5 +4,6 @@
 
 <% @question.answers.each do |answer| %>
   <p><%= answer.content %></p>
-  <p><%= answer.user.email %> at <%= answer.created_at.to_date %>
+  <p><%= answer.user.email %> at <%= answer.created_at.to_date %></p>
+
 <% end %>

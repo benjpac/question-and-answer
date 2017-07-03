@@ -1,2 +1,7 @@
-<h1>Answer#_form</h1>
-<p>Find me in app/views/answer/_form.html.erb</p>
+<%= render('layouts/errors', :object => @answer) %>
+
+<%= form_for [@question, @answer] do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>

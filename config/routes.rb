@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'answer/new'
 
+  get 'answer/show'
+
   get 'question/_form'
 
   get 'question/new'
