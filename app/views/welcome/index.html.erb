@@ -1,0 +1,8 @@
+<h1>Cloud Technology and Cyber Security Forum</h1>
+<p>Become a master of cloud technology, cyber security, and all things related.</p>
+<%= link_to "Ask a new question", new_question_path %>
+<ul>
+  <% @questions.each do |question| %>
+    <li><%= link_to question.content, question_path(question) %></li>
+  <% end %>
+</ul>
